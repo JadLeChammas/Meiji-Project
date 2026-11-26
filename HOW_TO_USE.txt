@@ -1,0 +1,35 @@
+PROJET EMU - PYTHON SETUP
+Type these in the VS Code terminal (Terminal > New Terminal).
+
+
+1. CHECK WHICH PYTHON YOU HAVE
+
+     python --version
+     where python
+
+   If it prints "Python 3.14.x" and C:\Python314\python.exe -> go to step 3.
+   Otherwise (older version, error, or another path) -> step 2.
+
+
+2. INSTALL PYTHON 3.14
+
+   - Download "Windows installer (64-bit)" for Python 3.14:
+     https://www.python.org/downloads/windows/
+   - Run it. On the first screen tick "Add python.exe to PATH".
+   - Click "Customize installation" > Next > install location:  C:\Python314  > Install.
+   - Close and reopen VS Code, then check:
+
+     C:\Python314\python.exe --version
+
+
+3. INSTALL THE PACKAGES
+
+     C:\Python314\python.exe -m pip install --upgrade pip
+     C:\Python314\python.exe -m pip install pyserial numpy scipy matplotlib pandas openpyxl
+
+
+4. CHECK THE PACKAGES
+
+     C:\Python314\python.exe -c "import serial, numpy, scipy, matplotlib, pandas, openpyxl; print('all OK')"
+
+   It must print "all OK".

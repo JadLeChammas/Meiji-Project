@@ -1,0 +1,6 @@
+# recorded data and generated files
+Test_MCU_Python/results_*/
+__pycache__/
+# CCS build output
+Firmware_CCS/Project_Emu/Debug/
+Firmware_CCS/Project_Emu/.clangd
